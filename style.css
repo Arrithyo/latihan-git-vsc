@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1.25em;
+    background: blue;
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: .25em;
+    text-transform: uppercase;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    -ms-border-radius: .25em;
+    -o-border-radius: .25em;
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.main-text {
+    font-size: 4rem;
+    font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 15em 0;
+    background-image: url(img/fashion-shoes-sneakers.jpg), 
+    radial-gradient(#444, #111);
+    background-size: 100%;
+    background-blend-mode: multiply;
+}
+
+.section-title {
+    color: #111;
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+}
+
+section {
+    padding: 7em 0;
+    line-height: 1;
+    color: white;
+}
+
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+
+    &>*{
+        flex-basis: 30%;
+        min-width: 15em;
+    }
+}
+
+.featured-item{
+        display: block;
+        position: relative;
+        transform: scale(.85);
+        -webkit-transform: scale(.85);
+        -moz-transform: scale(.85);
+        -ms-transform: scale(.85);
+        -o-transform: scale(.85);
+        text-decoration: none;
+        text-align: center;
+        line-height: 1.2;
+}
+
+.featured-detail {
+    color: white;
+    display:grid;
+    text-decoration: none;
+    opacity: 1;
+
+    span {
+        font-weight: 700;
+        font-size: 2.51rem;
+    }
+}
+
+.featured-item:hover,
+.featured-item:focus {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    
+    .featured-detail {
+        color:#444;
+        transition: opacity 255ms ease-in-out;
+        -webkit-transition: opacity 255ms ease-in-out;
+        -moz-transition: opacity 255ms ease-in-out;
+        -ms-transition: opacity 255ms ease-in-out;
+        -o-transition: opacity 255ms ease-in-out;
+}
+}
+
+.featured-item::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    padding: 65% 65% 0 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #2193b0;
+    z-index: -1;
+}
+
+
+
+
+
